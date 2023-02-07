@@ -1,19 +1,22 @@
-// import React from 'react';
 import PropTypes from 'prop-types';
+
+import { generateRandomColor } from 'utils/RandomColor';
+import { StatList, StatTitle, StatItem } from './Statistics.styled';
+import { Section } from 'utils/Section/Section.styled';
 
 export default function Statistics({ stats, title }) {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
-      <ul className="stat-list">
+    <Section>
+      {title && <StatTitle>{title}</StatTitle>}
+      <StatList>
         {stats.map(({ label, percentage, id }) => (
-          <li className="item" key={id}>
+          <StatItem key={id} backgroundColor={generateRandomColor()}>
             <span className="label">{label} </span>
             <span className="percentage">{percentage}%</span>
-          </li>
+          </StatItem>
         ))}
-      </ul>
-    </section>
+      </StatList>
+    </Section>
   );
 }
 
