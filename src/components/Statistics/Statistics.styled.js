@@ -10,10 +10,21 @@ export const StatList = styled.ul`
   display: flex;
   justify-content: space-around;
   border-top: 1px solid #dae1ef;
-  padding-top: 10px;
 `;
 
 export const StatItem = styled.li`
+  padding: 10px 0;
   text-align: center;
-  background-color: {({backgroundColor}) => backgroundColor};
+  width: calc(100% / 5);
+  background-color: ${p => p.backgroundColor};
+`;
+
+export const Label = styled.span`
+  display: block;
+  font-size: 12px;
+  color: #fff;
+`;
+
+export const Percent = styled(Label)`
+  font-size: 16px;
 `;

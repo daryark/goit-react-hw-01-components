@@ -3,3 +3,5 @@ export function generateRandomColor() {
   return randomColor;
   //random color will be freshly served
 }
+
+console.log(generateRandomColor());
