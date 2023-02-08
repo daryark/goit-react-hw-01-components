@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { capitalize } from 'voca';
+import { TransactionItemStyle } from './TransitionItem.styled';
 
 export default function TransactionItem({ type, amount, currency }) {
   return (
     <tr>
-      <td>{capitalize(type)}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <TransactionItemStyle>{capitalize(type)}</TransactionItemStyle>
+      <TransactionItemStyle>{amount}</TransactionItemStyle>
+      <TransactionItemStyle>{currency}</TransactionItemStyle>
     </tr>
   );
 }

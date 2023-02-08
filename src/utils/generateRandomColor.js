@@ -1,7 +1,22 @@
-export function generateRandomColor() {
-  var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-  return randomColor;
-  //random color will be freshly served
-}
+// export function generateRandomColor() {
+//   const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+//   console.log(`randomColor from `, randomColor);
+//   if (randomColor === '#ffffff') {
+//     console.log(`its white ${randomColor}`);
+//   }
+//   return randomColor;
+// }
 
-console.log(generateRandomColor());
+export function generateRandomColor() {
+  const randomColor = `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+
+  console.log(randomColor);
+  if (randomColor === '#ffffff') {
+    alert('this is white');
+    generateRandomColor();
+  }
+
+  return randomColor;
+}
