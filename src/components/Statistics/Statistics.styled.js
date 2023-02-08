@@ -1,5 +1,6 @@
-import { Title } from 'components/Profile/Profile.styled';
 import styled from 'styled-components';
+import { Title } from 'components/Profile/Profile.styled';
+import { generateRandomColor } from 'utils/generateRandomColor';
 
 export const StatTitle = styled(Title)`
   text-transform: uppercase;
@@ -16,7 +17,7 @@ export const StatItem = styled.li`
   padding: 10px 0;
   text-align: center;
   width: calc(100% / 5);
-  background-color: ${p => p.backgroundColor};
+  background-color: ${generateRandomColor};
 `;
 
 export const Label = styled.span`

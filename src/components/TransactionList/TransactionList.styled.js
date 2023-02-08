@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { generateRandomColor } from 'utils/generateRandomColor';
 
 export const TransactionTable = styled.table`
   width: 600px;
@@ -6,8 +7,7 @@ export const TransactionTable = styled.table`
   border: 1px solid #dae1ef;
 `;
 
-export const TransactionHeadItem = styled.th`
-  padding: 5px;
+export const TransactionHead = styled.tr`
   color: #ffffff;
-  background-color: blueviolet;
+  background-color: ${generateRandomColor};
 `;

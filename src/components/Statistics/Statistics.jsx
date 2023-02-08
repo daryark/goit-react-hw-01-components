@@ -6,8 +6,7 @@ import {
   Label,
   Percent,
 } from './Statistics.styled';
-import { Section } from 'utils/Section/Section.styled';
-import { generateRandomColor } from 'utils/generateRandomColor';
+import { Section } from 'components/common/Section/Section.styled';
 
 export default function Statistics({ stats, title }) {
   return (
@@ -15,9 +14,8 @@ export default function Statistics({ stats, title }) {
       {title && <StatTitle>{title}</StatTitle>}
       <StatList>
         {stats.map(({ label, percentage, id }) => {
-          const randomColor = generateRandomColor();
           return (
-            <StatItem key={id} backgroundColor={randomColor}>
+            <StatItem key={id}>
               <Label>{label} </Label>
               <Percent>{percentage}%</Percent>
             </StatItem>

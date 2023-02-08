@@ -1,20 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TransactionItem from 'components/TransactionItem/TransactionItem';
-import {
-  TransactionTable,
-  TransactionHeadItem,
-} from './TransactionList.styled';
+import { TransactionTable, TransactionHead } from './TransactionList.styled';
 
 export default function TransactionList({ transactions }) {
   return (
     <TransactionTable>
       <thead>
-        <tr>
-          <TransactionHeadItem>Type</TransactionHeadItem>
-          <TransactionHeadItem>Amount</TransactionHeadItem>
-          <TransactionHeadItem>Currency</TransactionHeadItem>
-        </tr>
+        <TransactionHead>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
+        </TransactionHead>
       </thead>
 
       <tbody>

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Section } from 'utils/Section/Section.styled';
+import { Section } from 'components/common/Section/Section.styled';
 import {
   Description,
   Avatar,
