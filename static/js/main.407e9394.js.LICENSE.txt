@@ -1,11 +1,3 @@
-/*! 
- * Voca string library 1.4.0
- * https://vocajs.com
- *
- * Copyright Dmitri Pavlutin and other contributors
- * Released under the MIT license
- */
-
 /**
  * @license React
  * react-dom.production.min.js
