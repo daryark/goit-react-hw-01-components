@@ -1,8 +1,13 @@
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-// export const TransactionTable = styled.table`
-// `
+export const TransactionTable = styled.table`
+  width: 600px;
+  background-color: #fff;
+  border: 1px solid #dae1ef;
+`;
 
-// export const TransactionItem = styled.th`
-//   width: calc(100% / 3);
-// `;
+export const TransactionHeadItem = styled.th`
+  padding: 5px;
+  color: #ffffff;
+  background-color: blueviolet;
+`;

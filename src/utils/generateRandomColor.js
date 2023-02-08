@@ -12,9 +12,7 @@ export function generateRandomColor() {
     .toString(16)
     .padStart(6, 0)}`;
 
-  console.log(randomColor);
   if (randomColor === '#ffffff') {
-    alert('this is white');
     generateRandomColor();
   }
 

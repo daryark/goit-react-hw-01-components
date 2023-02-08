@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import { Section } from 'utils/Section/Section.styled';
+import { FriendListItemSection } from './FriendListItem.styled';
 
 export default function FriendListItem({ isOnline, avatar, name }) {
   return (
-    <li className="item">
-      <Section>
-        <span className={isOnline ? 'online' : 'offline'}></span>
+    <Section>
+      <FriendListItemSection isOnline={isOnline}>
         <img className="avatar" src={avatar} alt="User avatar" width="48" />
         <p className="name">{name}</p>
-      </Section>
-    </li>
+      </FriendListItemSection>
+    </Section>
   );
 }
 
